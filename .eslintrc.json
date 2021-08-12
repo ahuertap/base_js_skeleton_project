@@ -1,0 +1,35 @@
+{
+  "parser": "babel-eslint",
+  "env": {
+    "browser": true,
+    "node": true
+  },
+  "parserOptions": {
+    "ecmaVersion": 6,
+    "sourceType": "module",
+    "ecmaFeatures": {
+      "jsx": true
+    }
+  },
+  "plugins": [
+    "eslint-plugin-html",
+    "import"
+  ],
+  "extends": [
+    "eslint:recommended",
+    "plugin:prettier/recommended"
+  ],
+  "rules": {
+    "array-callback-return": "warn",
+    "curly": "warn",
+    "eqeqeq": "error",
+    "no-var": "error",
+    "no-await-in-loop": "error",
+    "prefer-const": "error",
+    "prefer-template": "warn",
+    "yoda": "error",
+    "import/first": "error",
+    "import/newline-after-import": "error",
+    "import/no-duplicates": "error"
+  }
+}
